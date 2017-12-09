@@ -15,7 +15,6 @@ class UpdateUsersTableMissingAttr extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
 
-            $table->string('emergency_number')->after('email')->nullable();
             $table->string('address')->after('email')->nullable();
             $table->string('mobile_number')->after('email')->nullable();
         });

@@ -10,63 +10,52 @@
 
             <div class="panel panel-default">
 
-                <div class="panel-heading">Create Item</div>
+                <div class="panel-heading">Create Staff</div>
 
                 <div class="panel-body">
 
-                	{!! Form::open(['route'=>'items.store', 'class'=>'form-horizontal']) !!}
+                	{!! Form::open(['route'=>'managers.store', 'class'=>'form-horizontal']) !!}
 
-                		{{-- Article ID --}}
+                		{{-- Name --}}
                 		<div class="form-group">
 
-	                		{!! Form::label('','Articel Number', ['class'=>'control-lable, col-md-4']) !!}
+	                		{!! Form::label('','Name', ['class'=>'control-lable, col-md-4']) !!}
 	               	
                 			<div class="col-md-6">
-                				{!! Form::text('article_number', old('article_number'), ['class'=>'form-control']) !!}
+                				{!! Form::text('name', old('name'), ['class'=>'form-control']) !!}
             				</div>
                 		</div>
 
-                		{{-- Size --}}
+                		{{-- Email --}}
                 		<div class="form-group">
 
-	                		{!! Form::label('','Size', ['class'=>'control-lable, col-md-4']) !!}
+	                		{!! Form::label('','Emaile', ['class'=>'control-lable, col-md-4']) !!}
 
 	                		<div class="col-md-6">
-	                			{!! Form::text('size', old('size'), ['class'=>'form-control']) !!}
+	                			{!! Form::text('email', old('email'), ['class'=>'form-control']) !!}
 	                		</div>
 
                 		</div>
 
-                		{{-- Color --}}
+                		{{-- Mobile Number --}}
                 		<div class="form-group">
 
-	                		{!! Form::label('', 'Color', ['class'=>'control-lable, col-md-4']) !!}
+	                		{!! Form::label('', 'Mobil Number', ['class'=>'control-lable, col-md-4']) !!}
 
 	                		<div class="col-md-6">
-	                			{!! Form::text('color', old('color'), ['class'=>'form-control']) !!}
+	                			{!! Form::text('mobile_number', old('mobile_number'), ['class'=>'form-control']) !!}
 	                		</div>
                 		</div>
 
-                		{{-- Price --}}
+                		{{-- Address --}}
                 		<div class="form-group">
 
-	                		{!! Form::label('', 'Price', ['class'=>'control-lable, col-md-4']) !!}
+	                		{!! Form::label('', 'Address', ['class'=>'control-lable, col-md-4']) !!}
 
 	                		<div class="col-md-6">
-	                			{!! Form::text('price', old('price'), ['class'=>'form-control']) !!}
+	                			{!! Form::text('address', old('address'), ['class'=>'form-control']) !!}
 	                		</div>
                 		</div>
-
-                		{{-- Stock --}}
-                		<div class="form-group">
-
-	                		{!! Form::label('', 'Stock', ['class'=>'control-lable, col-md-4']) !!}
-
-	                		<div class="col-md-6">
-	                			{!! Form::text('stock', old('stock'), ['class'=>'form-control']) !!}
-	                		</div>
-                		</div>
-
                 		
                 		<div class="form-group">
                 			

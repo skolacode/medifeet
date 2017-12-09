@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('main')
 
 @section('content')
 <div class="container">
@@ -53,22 +53,7 @@
                                 @endif--}}
                             </div>
                         </div>
-
-                        {{-- Emergency Number --}}
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="emergency_number" class="col-md-4 control-label">Emergency Number</label>
-
-                            <div class="col-md-6">
-                                <input id="emergency_number" type="text" class="form-control" name="emergency_number" value="{{ old('emergency_number') }}" required>
-
-                                {{--@if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif--}}
-                            </div>
-                        </div>
-
+                        
                         {{-- Address --}}
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <label for="address" class="col-md-4 control-label">Address</label>

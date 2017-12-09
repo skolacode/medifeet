@@ -35,18 +35,7 @@
                 				{!! Form::text('article_number', old('article_number'), ['class'=>'form-control']) !!}
             				</div>
                 		</div>
-
-                		{{-- Name --}}
-                		<div class="form-group">
-
-	                		{!! Form::label('','Name', ['class'=>'control-lable, col-md-4']) !!}
-
-	                		<div class="col-md-6">
-	                			{!! Form::text('name', old('name'), ['class'=>'form-control']) !!}
-	                		</div>
-
-                		</div>
-
+                        
                 		{{-- Size --}}
                 		<div class="form-group">
 

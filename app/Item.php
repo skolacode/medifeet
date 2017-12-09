@@ -14,7 +14,7 @@ class Item extends Model
      */
 	protected $fillable = [
 
-		'article_number', 'name', 'size', 'price', 'color', 'stock'
+		'article_number', 'size', 'price', 'color', 'stock'
 	];
 
 
@@ -33,5 +33,14 @@ class Item extends Model
         $allItems = Item::get();
 
         return $allItems;
+    }
+
+    /* Get item size in drop down base on article Number */
+    public static function itemsDropDown($article_number, $type)
+    {
+
+        $result = Item::where('article_number', $article_number)->pluck($type, 'id');
+
+        return $result; 
     }
 }

@@ -4,12 +4,21 @@
 
 	<div class="container">
 
+		<!-- Main title and info about page -->
+		<div class="text-left">
+			
+			<h1> Items Inventory </h1>
+
+			<small>Add, Edit, Delete, Update Items can be done in this page</small>
+			<hr>
+		</div>
+
 		<div class="row">
 			
 			<div class="col-md-3">
 				
 				<a href="{!! route('items.create') !!}" class="btn btn-primary btn-bg btn-block">
-					Add Item
+					Add New Item
 				</a>
 
 				<hr>
@@ -32,7 +41,6 @@
 				  		<tr>
 				  			<th>#</th>
 				  			<th>Articel Number</th>
-				  			<th>Name</th>
 				  			<th>Size</th>
 				  			<th>Color</th>
 				  			<th>Price</th>
@@ -51,7 +59,6 @@
 				  		<tr>
 				  			<td>{{ $i++ }}</td>
 				  			<td class="col-md-2">{{ $item->article_number }}</td>
-				  			<td class="col-md-3">{{ $item->name }}</td>
 				  			<td class="col-md-2">{{ $item->size }}</td>
 				  			<td class="col-md-2">{{ $item->color }}</td>
 				  			<td class="col-md-2">{{ $item->price }}</td>
